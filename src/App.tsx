@@ -9,7 +9,7 @@ export interface QuestionData {
   optionOneNextId: number;
   optionTwoText: string;
   optionTwoNextId: number;
-  optionThreeText: string
+  optionThreeText: string;
   optionThreeNextId: number;
   finalState: boolean;
 }
