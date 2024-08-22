@@ -1,5 +1,8 @@
 ## Decision Card
 
+### Application
+- Visit deployed URL: https://main.dabfkj1oy00ox.amplifyapp.com/
+
 ### Demo
 - Video: https://drive.google.com/file/d/1B6Y-xaKKhi2msVItNmtKh8jPQxnlaVSh/view?usp=sharing
 - Annotated diagram: https://drive.google.com/file/d/1-kXtYPoYgvC_XdMsdspplEPomL0Y3018/view?usp=drive_link
