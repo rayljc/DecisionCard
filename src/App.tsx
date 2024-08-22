@@ -49,11 +49,13 @@ interface QuestionProps {
 
 const Question: React.FC<QuestionProps> = ({ question, onOptionOne, onOptionTwo, onOptionThree }) => {
   return (
-    <div>
+    <div className="QuestionContainer">
       <p>{question.content}</p>
-      { !question.finalState && question.optionOneText && <button onClick={onOptionOne}> {question.optionOneText} </button> }
-      { !question.finalState && question.optionTwoText && <button onClick={onOptionTwo}> {question.optionTwoText} </button> }
-      { !question.finalState && question.optionThreeText && <button onClick={onOptionThree}> {question.optionThreeText} </button> }
+      <div className="ButtonsContainer">
+        { !question.finalState && question.optionOneText && <button onClick={onOptionOne}> {question.optionOneText} </button> }
+        { !question.finalState && question.optionTwoText && <button onClick={onOptionTwo}> {question.optionTwoText} </button> }
+        { !question.finalState && question.optionThreeText && <button onClick={onOptionThree}> {question.optionThreeText} </button> }
+      </div>
     </div>
   );
 };

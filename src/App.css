@@ -1,10 +1,60 @@
+/* App.css */
+
 .App {
-  text-align: center;
-  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.QuestionContainer {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center; /* Center text within the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 button {
-  margin: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
   padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease;
 }
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Flex container for buttons to align them on the same line */
+.ButtonsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap if they don't fit in one line */
+  justify-content: center; /* Center buttons horizontally */
+}
+
