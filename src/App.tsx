@@ -21,9 +21,9 @@ const questions: QuestionData[] = [
     id: 3, 
     content: (
       <>
-        <p><strong>Straglr</strong>: A tool for detecting tandem repeats.</p>
-        <p><strong>RepeatHMM</strong>: Another tool for tandem repeat analysis.</p>
-        <p><strong>TRF</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+        <p><strong><a href="https://github.com/bcgsc/straglr" target="_blank" rel="noopener noreferrer">Straglr</a></strong>: Versatile in quantifying and genotyping all TR types.</p>
+        <p><strong><a href="https://github.com/WGLab/RepeatHMM" target="_blank" rel="noopener noreferrer">RepeatHMM</strong>: Capable of quantifying and genotyping STRs and VNTRs.</p>
+        <p><strong><a href="https://github.com/Benson-Genomics-Lab/TRF" target="_blank" rel="noopener noreferrer">TRF</strong>: A widely used tool for identifying tandem TR.</p>
       </>
     ),
     optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
@@ -34,7 +34,7 @@ const questions: QuestionData[] = [
     id: 6, 
     content: (
       <>
-        <p><strong>NASTRA</strong>: A tool for detecting tandem repeats.</p>
+        <p><strong><a href="https://github.com/renzilin/NASTRA" target="_blank" rel="noopener noreferrer">NASTRA</strong></p>
       </>
     ),
     optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
@@ -43,11 +43,11 @@ const questions: QuestionData[] = [
     id: 7, 
     content: (
       <>
-        <p><strong>tandem-genotypes</strong>: A tool for detecting tandem repeats.</p>
-        <p><strong>NanoRepeat</strong>: Another tool for tandem repeat analysis.</p>
-        <p><strong>Straglr</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
-        <p><strong>LongTR</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
-        <p><strong>HMMSTR</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+        <p><strong><a href="https://github.com/mcfrith/tandem-genotypes" target="_blank" rel="noopener noreferrer">tandem-genotypes</strong></p>
+        <p><strong><a href="https://github.com/WGLab/NanoRepeat" target="_blank" rel="noopener noreferrer">NanoRepeat</strong></p>
+        <p><strong><a href="https://github.com/bcgsc/straglr" target="_blank" rel="noopener noreferrer">Straglr</a></strong></p>
+        <p><strong><a href="https://github.com/gymrek-lab/LongTR" target="_blank" rel="noopener noreferrer">LongTR</strong></p>
+        <p><strong><a href="https://github.com/Boyle-Lab/HMMSTR" target="_blank" rel="noopener noreferrer">HMMSTR</strong></p>
       </>
     ),
     optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
@@ -56,10 +56,10 @@ const questions: QuestionData[] = [
     id: 8, 
     content: (
       <>
-        <p><strong>HMMSTR</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
-        <p><strong>Straglr</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
-        <p><strong>tandem-genotypes</strong>: A tool for detecting tandem repeats.</p>
-        <p><strong>NanoRepeat</strong>: Another tool for tandem repeat analysis.</p>
+        <p><strong><a href="https://github.com/Boyle-Lab/HMMSTR" target="_blank" rel="noopener noreferrer">HMMSTR</strong></p>
+        <p><strong><a href="https://github.com/bcgsc/straglr" target="_blank" rel="noopener noreferrer">Straglr</a></strong></p>
+        <p><strong><a href="https://github.com/mcfrith/tandem-genotypes" target="_blank" rel="noopener noreferrer">tandem-genotypes</strong></p>
+        <p><strong><a href="https://github.com/WGLab/NanoRepeat" target="_blank" rel="noopener noreferrer">NanoRepeat</strong></p>
       </>
     ),
     optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
@@ -68,8 +68,8 @@ const questions: QuestionData[] = [
     id: 9, 
     content: (
       <>
-        <p><strong>Straglr</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
-        <p><strong>LongTR</strong>: Another tool for tandem repeat analysis.</p>
+        <p><strong><a href="https://github.com/bcgsc/straglr" target="_blank" rel="noopener noreferrer">Straglr</a></strong></p>
+        <p><strong><a href="https://github.com/gymrek-lab/LongTR" target="_blank" rel="noopener noreferrer">LongTR</strong></p>
       </>
     ),
     optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
@@ -78,8 +78,8 @@ const questions: QuestionData[] = [
     id: 10, 
     content: (
       <>
-        <p><strong>NanoRepeat</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
-        <p><strong>HMMSTR</strong>: Another tool for tandem repeat analysis.</p>
+        <p><strong><a href="https://github.com/WGLab/NanoRepeat" target="_blank" rel="noopener noreferrer">NanoRepeat</strong></p>
+        <p><strong><a href="https://github.com/Boyle-Lab/HMMSTR" target="_blank" rel="noopener noreferrer">HMMSTR</strong></p>
       </>
     ),
     optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
@@ -88,8 +88,8 @@ const questions: QuestionData[] = [
     id: 11, 
     content: (
       <>
-        <p><strong>tandem-genotypes</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
-        <p><strong>HMMSTR</strong>: Another tool for tandem repeat analysis.</p>
+        <p><strong><a href="https://github.com/mcfrith/tandem-genotypes" target="_blank" rel="noopener noreferrer">tandem-genotypes</strong></p>
+        <p><strong><a href="https://github.com/Boyle-Lab/HMMSTR" target="_blank" rel="noopener noreferrer">HMMSTR</strong></p>
       </>
     ),
     optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
