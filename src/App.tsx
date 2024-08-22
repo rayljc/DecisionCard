@@ -50,7 +50,9 @@ interface QuestionProps {
 const Question: React.FC<QuestionProps> = ({ question, onOptionOne, onOptionTwo, onOptionThree }) => {
   return (
     <div className="QuestionContainer">
-      <p>{question.content}</p>
+      <div style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+        {question.content}
+      </div>
       <div className="ButtonsContainer">
         { !question.finalState && question.optionOneText && <button onClick={onOptionOne}> {question.optionOneText} </button> }
         { !question.finalState && question.optionTwoText && <button onClick={onOptionTwo}> {question.optionTwoText} </button> }
