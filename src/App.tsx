@@ -4,7 +4,7 @@ import './App.css';
 // Assuming there are at most three options
 export interface QuestionData {
   id: number;
-  content: string;
+  content: JSX.Element;
   optionOneText: string;
   optionOneNextId: number;
   optionTwoText: string;
@@ -15,29 +15,85 @@ export interface QuestionData {
 }
 
 const questions: QuestionData[] = [
-  { id: 1, content: 'Interest in a specific TR?', optionOneText: "Yes", optionOneNextId: 2, optionTwoText: "No", optionTwoNextId: 3, optionThreeText: "", optionThreeNextId: -1, finalState: false },
-  { id: 2, content: "What kind of analysis?", optionOneText: "Quantification", optionOneNextId: 4, optionTwoText: "Genotyping", optionTwoNextId: 5, optionThreeText: "DNA fingerprinting", optionThreeNextId: 6, finalState: false },
+  { id: 1, content: <p>Interest in a specific TR?</p>, optionOneText: "Yes", optionOneNextId: 2, optionTwoText: "No", optionTwoNextId: 3, optionThreeText: "", optionThreeNextId: -1, finalState: false },
+  { id: 2, content: <p>What kind of analysis?</p>, optionOneText: "Quantification", optionOneNextId: 4, optionTwoText: "Genotyping", optionTwoNextId: 5, optionThreeText: "DNA fingerprinting", optionThreeNextId: 6, finalState: false },
   { 
     id: 3, 
-    content: `STRaglr: A tool for detecting tandem repeats.
-RepeatHMM: Another tool for tandem repeat analysis.
-TRF: A tool commonly used for finding tandem repeats in DNA sequences.`, 
-    optionOneText: "", 
-    optionOneNextId: -1, 
-    optionTwoText: "", 
-    optionTwoNextId: -1, 
-    optionThreeText: "", 
-    optionThreeNextId: -1, 
-    finalState: true 
+    content: (
+      <>
+        <p><strong>Straglr</strong>: A tool for detecting tandem repeats.</p>
+        <p><strong>RepeatHMM</strong>: Another tool for tandem repeat analysis.</p>
+        <p><strong>TRF</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+      </>
+    ),
+    optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
   },
-  { id: 4, content: 'Which type are you interested in?', optionOneText: "STRs (2-6 bp)", optionOneNextId: 7, optionTwoText: "VNTRs (6-100 bp)", optionTwoNextId: 8, optionThreeText: "Macrosatellites (>100 bp)", optionThreeNextId: 9, finalState: false },
-  { id: 5, content: 'Which type are you interested in?', optionOneText: "STRs (2-6 bp)", optionOneNextId: 10, optionTwoText: "VNTRs (6-100 bp)", optionTwoNextId: 11, optionThreeText: "Macrosatellites (>100 bp)", optionThreeNextId: 9, finalState: false },
-  { id: 6, content: 'NASTRA', optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true },
-  { id: 7, content: 'tandem-genotypes, NanoRepeat, Straglr, LongTR, HMMSTR', optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true },
-  { id: 8, content: 'HMMSTR, Straglr, tandem-genotypes, NanoRepeat', optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true },
-  { id: 9, content: 'Straglr, LongTR', optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true },
-  { id: 10, content: 'NanoRepeat, HMMSTR', optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true },
-  { id: 11, content: 'tandem-genotypes, HMMSTR', optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true }
+  { id: 4, content: <p>Which type are you interested in?</p>, optionOneText: "STRs (2-6 bp)", optionOneNextId: 7, optionTwoText: "VNTRs (6-100 bp)", optionTwoNextId: 8, optionThreeText: "Macrosatellites (>100 bp)", optionThreeNextId: 9, finalState: false },
+  { id: 5, content: <p>Which type are you interested in?</p>, optionOneText: "STRs (2-6 bp)", optionOneNextId: 10, optionTwoText: "VNTRs (6-100 bp)", optionTwoNextId: 11, optionThreeText: "Macrosatellites (>100 bp)", optionThreeNextId: 9, finalState: false },
+  { 
+    id: 6, 
+    content: (
+      <>
+        <p><strong>NASTRA</strong>: A tool for detecting tandem repeats.</p>
+      </>
+    ),
+    optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
+  },
+  { 
+    id: 7, 
+    content: (
+      <>
+        <p><strong>tandem-genotypes</strong>: A tool for detecting tandem repeats.</p>
+        <p><strong>NanoRepeat</strong>: Another tool for tandem repeat analysis.</p>
+        <p><strong>Straglr</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+        <p><strong>LongTR</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+        <p><strong>HMMSTR</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+      </>
+    ),
+    optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
+  },
+  { 
+    id: 8, 
+    content: (
+      <>
+        <p><strong>HMMSTR</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+        <p><strong>Straglr</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+        <p><strong>tandem-genotypes</strong>: A tool for detecting tandem repeats.</p>
+        <p><strong>NanoRepeat</strong>: Another tool for tandem repeat analysis.</p>
+      </>
+    ),
+    optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
+  },
+  { 
+    id: 9, 
+    content: (
+      <>
+        <p><strong>Straglr</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+        <p><strong>LongTR</strong>: Another tool for tandem repeat analysis.</p>
+      </>
+    ),
+    optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
+  },
+  { 
+    id: 10, 
+    content: (
+      <>
+        <p><strong>NanoRepeat</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+        <p><strong>HMMSTR</strong>: Another tool for tandem repeat analysis.</p>
+      </>
+    ),
+    optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
+  },
+  { 
+    id: 11, 
+    content: (
+      <>
+        <p><strong>tandem-genotypes</strong>: A tool commonly used for finding tandem repeats in DNA sequences.</p>
+        <p><strong>HMMSTR</strong>: Another tool for tandem repeat analysis.</p>
+      </>
+    ),
+    optionOneText: "", optionOneNextId: -1, optionTwoText: "", optionTwoNextId: -1, optionThreeText: "", optionThreeNextId: -1, finalState: true 
+  }
 ];
 
 interface QuestionProps {
